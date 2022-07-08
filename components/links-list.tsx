@@ -2,7 +2,7 @@ import React from 'react';
 import { StackDivider, VStack } from '@chakra-ui/react';
 
 type LinksListProps = {
-  children: React.ReactNode
+  children: React.ReactNode;
 };
 
 export function LinksList(props: LinksListProps) {
@@ -10,10 +10,10 @@ export function LinksList(props: LinksListProps) {
 
   return (
     <VStack
-      rounded='5px'
-      divider={<StackDivider borderColor='gray.200' />}
+      rounded="5px"
+      divider={<StackDivider borderColor="gray.200" />}
       spacing={0}
-      align='stretch'
+      align="stretch"
     >
       {children}
     </VStack>

@@ -60,8 +60,8 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
       pos="relative"
     >
       {isCommunity && (
-        <Tooltip label={'Community contribution'} hasArrow placement="top">
-          <InfoIcon opacity={0.5} position="absolute" top="10px" right="10px" />
+        <Tooltip label={'توسعه‌ی متن‌باز'} hasArrow placement="top">
+          <InfoIcon opacity={0.5} position="absolute" top="10px" left="10px" />
         </Tooltip>
       )}
 

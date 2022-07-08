@@ -65,7 +65,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
               >
                 <Text
                   as="span"
-                  d={['block', 'none', 'none', 'block']}
+                  display={['block', 'none', 'none', 'block']}
                   ml="10px"
                 >
                   Mark as Done
@@ -88,7 +88,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
               >
                 <Text
                   as="span"
-                  d={['block', 'none', 'none', 'block']}
+                  display={['block', 'none', 'none', 'block']}
                   ml="10px"
                 >
                   Mark as Pending
@@ -103,7 +103,11 @@ export function ContentDrawer(props: ContentDrawerProps) {
               iconSpacing={0}
               size="xs"
             >
-              <Text as="span" d={['none', 'none', 'none', 'block']} ml="10px">
+              <Text
+                as="span"
+                display={['none', 'none', 'none', 'block']}
+                ml="10px"
+              >
                 Close
               </Text>
             </Button>

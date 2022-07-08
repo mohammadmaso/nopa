@@ -3,13 +3,17 @@ import styled from 'styled-components';
 import LinkIcon from 'components/icons/link.svg';
 
 const linkify = (Component: React.FunctionComponent<any>) => {
-  return function EnrichedHeading(props: { children: string }): React.ReactNode {
+  return function EnrichedHeading(props: {
+    children: string;
+  }): React.ReactNode {
     const text = props.children;
-    const id = text?.toLowerCase && text
-      .toLowerCase()
-      .replace(/[^\x00-\x7F]/g, '')
-      .replace(/\s+/g, '-')
-      .replace(/[?!]/g, '');
+    const id =
+      text?.toLowerCase &&
+      text
+        .toLowerCase()
+        .replace(/[^\x00-\x7F]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/[?!]/g, '');
 
     return (
       <Component id={id}>
@@ -75,7 +79,7 @@ const Headings = {
   h3: H3,
   h4: H4,
   h5: H5,
-  h6: H6
+  h6: H6,
 };
 
 export default Headings;

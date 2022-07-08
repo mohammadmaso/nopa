@@ -15,7 +15,6 @@ export function UpdatesBanner() {
       borderTopWidth={1}
       pt={['40px', '40px', '70px']}
       pb={['40px', '45px', '80px']}
-      textAlign="left"
       bg="brand.footer"
     >
       <Container maxW="container.md">
@@ -24,7 +23,7 @@ export function UpdatesBanner() {
           fontSize={['25px', '25px', '35px']}
           mb={['5px', '5px', '15px']}
         >
-          Stay Informed
+          آگاه بمانید.
         </Heading>
         <Text
           color="gray.400"
@@ -32,12 +31,12 @@ export function UpdatesBanner() {
           fontSize={['15px', '15px', '16px']}
           mb="20px"
         >
-          Subscribe yourself to get updates, new guides, videos and roadmaps in
-          your inbox.
+          با نام‌نویسی در مدرسه نوپا از آخرین فیلم‌ها، مقالات و اخبار مدرسه با
+          خبر شوید.
         </Text>
 
         <Flex flexDirection={['column', 'column', 'row']}>
-          <Box mr={['0', '0', '20px']} mb={['15px', '15px', 0]}>
+          <Box ml={['0', '0', '20px']} mb={['15px', '15px', 0]}>
             <Button
               as={Link}
               href="/signup"
@@ -48,13 +47,13 @@ export function UpdatesBanner() {
               colorScheme="green"
               _hover={{ color: 'green.200', textDecoration: 'none' }}
             >
-              Subscribe to Updates
+              نام‌نویسی
             </Button>
             <Text color="gray.500" fontSize="13px" mt="5px">
-              Free subscription for updates
+              دسترسی رایگان به محتوای مدرسه
             </Text>
           </Box>
-          <Box>
+          {/* <Box>
             <Button
               as={Link}
               href={siteConfig.url.sponsor}
@@ -72,7 +71,7 @@ export function UpdatesBanner() {
                 5$ per month
               </Text>
             </Text>
-          </Box>
+          </Box> */}
         </Flex>
       </Container>
     </Box>

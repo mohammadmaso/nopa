@@ -43,7 +43,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
         <Flex justifyContent="space-between" alignItems={'center'} mt="20px">
           <Stack isInline>
             <Button
-              d={['flex', 'flex']}
+              display={['flex', 'flex']}
               as={Link}
               href={'/roadmaps'}
               size="xs"
@@ -54,7 +54,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
               _hover={{ textDecoration: 'none' }}
             >
               &larr;
-              <Text as="span" d={['none', 'inline']} ml="5px">
+              <Text as="span" display={['none', 'inline']} ml="5px">
                 All Roadmaps
               </Text>
             </Button>

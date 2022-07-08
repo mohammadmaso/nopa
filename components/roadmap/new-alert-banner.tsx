@@ -13,7 +13,7 @@ export function NewAlertBanner() {
       }}
       as={Link}
       href={siteConfig.url.youtube}
-      d="block"
+      display="block"
       target="_blank"
       color="red.700"
       fontSize="sm"
@@ -30,16 +30,16 @@ export function NewAlertBanner() {
       <Badge
         transition={'all 300ms'}
         className="new-badge"
-        mr="7px"
+        ml="7px"
         colorScheme="red"
         variant="solid"
       >
-        New
+        تازه
       </Badge>
-      <Text textDecoration="underline" as="span" d={['none', 'inline']}>
+      <Text textDecoration="underline" as="span" display={['none', 'inline']}>
         Roadmap topics to be covered on our YouTube Channel
       </Text>
-      <Text textDecoration="underline" as="span" d={['inline', 'none']}>
+      <Text textDecoration="underline" as="span" display={['inline', 'none']}>
         Topic videos being made on YouTube
       </Text>
       <Text as="span" ml="5px">
