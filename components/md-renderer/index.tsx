@@ -12,7 +12,6 @@ type MdRendererType = {
 export default function MdRenderer(props: MdRendererType) {
   return (
     <ChakraProvider theme={nopaTheme} resetCSS>
-      // @ts-ignore
       <MDXProvider components={MdxComponents}>{props.children}</MDXProvider>
     </ChakraProvider>
   );
