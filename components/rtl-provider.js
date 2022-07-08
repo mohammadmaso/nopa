@@ -12,5 +12,5 @@ export function RtlProvider({ children }) {
   const { locale } = "fa"
   const dir = locale == 'fa' ? 'rtl' : 'ltr'
   const cache = createCache(options[dir])
-  return <CacheProvider value={cache} children={children} />
+  return <CacheProvider value={cache} >{children}</CacheProvider>
 }

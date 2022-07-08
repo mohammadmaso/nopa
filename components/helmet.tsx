@@ -1,7 +1,7 @@
 import NextHead from 'next/head';
 import siteConfig from '../content/site.json';
 import { RoadmapType } from '../lib/roadmap';
-import { roadmapTheme } from '../styles/theme';
+import { nopaTheme } from '../styles/theme';
 
 type HelmetProps = {
   title?: string;
@@ -48,6 +48,8 @@ const Helmet = (props: HelmetProps) => {
       <meta charSet="UTF-8" />
 
       <title>{title || siteConfig.title}</title>
+      <title>{siteConfig.title}</title>
+
       <meta
         name="description"
         content={description || siteConfig.description}

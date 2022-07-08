@@ -12,6 +12,7 @@ import NProgress from 'nprogress';
 import Router from 'next/router';
 import { RtlProvider } from '../components/rtl-provider';
 import { DefaultSeo, SocialProfileJsonLd } from 'next-seo';
+import '../styles/html.css';
 
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
