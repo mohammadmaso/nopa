@@ -50,7 +50,7 @@ export function LinksListItem(props: LinksListItemProps) {
           transform: 'translateX(10px)',
         },
       }}
-      isTruncated
+      // isTruncated
       maxWidth="100%"
     >
       <Flex
@@ -59,7 +59,7 @@ export function LinksListItem(props: LinksListItemProps) {
         transition={'200ms'}
       >
         {icon}
-        <Text maxWidth={'345px'} isTruncated as="span">
+        <Text maxWidth={'345px'}  as="span">
           {title}
         </Text>
         {badgeText && (
