@@ -29,7 +29,8 @@ const loadConfig = (env = 'dev') => {
 const withMDX = require('@next/mdx')({
   extension: /\.(md|mdx)?$/,
   options: {
-    rehypePlugins: [rehypePrism]
+    rehypePlugins: [rehypePrism],
+    providerImportSource: "@mdx-js/react",
   }
 });
 
